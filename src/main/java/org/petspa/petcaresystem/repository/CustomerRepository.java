@@ -1,5 +1,10 @@
 package org.petspa.petcaresystem.repository;
 
-public class CustomerRepository {
+import org.petspa.petcaresystem.model.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CustomerRepository extends JpaRepository<Customer, String>{
 
 }
